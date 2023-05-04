@@ -6,7 +6,7 @@
 /*   By: lpeeters <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/28 10:15:02 by lpeeters          #+#    #+#             */
-/*   Updated: 2023/05/03 17:09:42 by lpeeters         ###   ########.fr       */
+/*   Updated: 2023/05/04 15:59:59 by lpeeters         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	ft_ismmint(char *str)
 	while (str[i] != '\0')
 	{
 		num = num * 10 + (str[i] - '0');
-		if (num * sign < -21473647 - 1 || num * sign > 21473647)
+		if (num * sign < -2147483647 - 1 || num * sign > 2147483647)
 			return (1);
 		i++;
 	}
